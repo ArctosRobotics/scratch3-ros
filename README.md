@@ -3,7 +3,7 @@
 
 **WORK IN PROGRESS**
 
-![scratch3-ros]([[https://github.com/ArctosRobotics/scratch3-ros/blob/master/Arctos%20ROS%20Scratch.jpg])
+![scratch3-ros]([https://github.com/ArctosRobotics/scratch3-ros/blob/master/Arctos%20ROS%20Scratch.jpg])
 
 ### Run from source
 
