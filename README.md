@@ -1,16 +1,9 @@
-## ROS Extension for Scratch 3
+## Move Arctos with Scratch3
 
-### This Project has been moved to https://github.com/Affonso-Gui/scratch-vm/tree/develop/src/extensions/scratch3_ros
 
 **WORK IN PROGRESS**
 
-![scratch3-ros](https://user-images.githubusercontent.com/20625381/46603998-c394a400-cb2f-11e8-82e3-a8a6c39050d0.png)
-
-### Run from browser
-
-Access [https://affonso-gui.github.io/scratch-gui](https://affonso-gui.github.io/scratch-gui).
-
-**MALFUNCTION on ROS connection**
+![scratch3-ros]([https://user-images.githubusercontent.com/20625381/46603998-c394a400-cb2f-11e8-82e3-a8a6c39050d0.png](https://github.com/ArctosRobotics/scratch3-ros/blob/master/Arctos%20ROS%20Scratch.jpg))
 
 ### Run from source
 
@@ -30,22 +23,34 @@ npm link scratch-vm
 npm start
 ```
 
-Then, access [http://localhost:8601](http://localhost:8601).
+## Load Arctos Pick and place demo 
+
+Reqirements: https://github.com/ArctosRobotics/arctosgui
+
+```
+cd arctosgui 
+./run.sh 
+cd
+cd Scratch/scratch-gui 
+npm start 
+
+In browser:
+localhost:8601
+File > Load from your computer
+Arctos.sb3
+roslaunch rosbridge_server rosbridge_websocket.launch
+```
+Then in ROS localhost block click the ! icon and as Master URI: type localhost and press OK 
+You should get Connected status. Otherwise check if the rosbridge server is properly installed and run. 
+
+
 
 ### Basic Usage
 
-Basic inverse kinematics sample from `tork_moveit_tutorial` using `MoveGroupCommander` interface is reproduced in Scratch 3 and shown below.
+Basic publishers on /ui_command topic. Same one which works with Arctos GUI to move the robot. 
+To make new predefined pose, move the robot with gui, make "Get message from" block and use /joint_states or /transformed_tf  
+to se the new pose data. Those can be pasted into "Set joint data to" block to make new custom pose. 
 
-![tork_example](https://user-images.githubusercontent.com/20625381/47195260-183ce800-d396-11e8-8214-4e75eadc73ff.png)
+![tork_example]([https://user-images.githubusercontent.com/20625381/47195260-183ce800-d396-11e8-8214-4e75eadc73ff.png](https://github.com/ArctosRobotics/scratch3-ros/blob/master/Scratch%20blocks.jpg))
 
-**TODO: Add scratch built-in documentation** 
 
-### Demo Program
-
-This repository have sample programs and launch files for using Scratch 3 ROS extension to control PR2 robot.
-
-To run demos launch `demo.launch` on a terminal and load files places on `examples/` from Scratch 3.
-
-![pr2_cup_demo](https://user-images.githubusercontent.com/20625381/47195265-1bd06f00-d396-11e8-826e-38bcbd187969.png)
-
-**TODO: add turtlesim and turtlebot demos**
