@@ -46,9 +46,12 @@ You should get Connected status. Otherwise check if the rosbridge server is prop
 
 
 ### Basic Usage
+![scratch3-ros](https://github.com/ArctosRobotics/scratch3-ros/blob/master/Scratch%20blocks.jpg)
 
 Basic publishers on /ui_command topic. Same one which works with Arctos GUI to move the robot. 
-To make new predefined pose, move the robot with gui, make "Get message from" block and use /joint_states or /transformed_tf  
+To make new predefined pose, move the robot with gui, make "Get message from" block and use /joint_states or /transformed_tf 
+
+
 to se the new pose data. Those can be pasted into "Set joint data to" block to make new custom pose. 
 
 ![tork_example]([https://user-images.githubusercontent.com/20625381/47195260-183ce800-d396-11e8-8214-4e75eadc73ff.png](https://github.com/ArctosRobotics/scratch3-ros/blob/master/Scratch%20blocks.jpg))
