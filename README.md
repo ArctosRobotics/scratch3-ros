@@ -25,8 +25,9 @@ npm start
 
 ## Load Arctos Pick and place demo 
 
-Reqirements: https://github.com/ArctosRobotics/arctosgui
-
+Reqirements: 
+Arctos GUI - https://github.com/ArctosRobotics/arctosgui
+Rosbridge - http://wiki.ros.org/rosbridge_suite
 ```
 cd arctosgui 
 ./run.sh 
@@ -39,11 +40,10 @@ localhost:8601
 File > Load from your computer
 Arctos.sb3
 ```
-Install rosbridge: 
+Install and run rosbridge: 
 ```
 sudo apt-get install ros-melodic-rosbridge-server
-```
-```
+
 roslaunch rosbridge_server rosbridge_websocket.launch
 ```
 Then in Scratch find last block called ROS localhost, then click on the ! icon and as Master URI: type localhost and press OK 
