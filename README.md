@@ -38,9 +38,15 @@ In browser:
 localhost:8601
 File > Load from your computer
 Arctos.sb3
+```
+Install rosbridge: 
+```
+sudo apt-get install ros-melodic-rosbridge-server
+```
+```
 roslaunch rosbridge_server rosbridge_websocket.launch
 ```
-Then in ROS localhost block click the ! icon and as Master URI: type localhost and press OK 
+Then in Scratch find last block called ROS localhost, then click on the ! icon and as Master URI: type localhost and press OK 
 You should get Connected status. Otherwise check if the rosbridge server is properly installed and run. 
 
 
